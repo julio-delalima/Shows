@@ -46,7 +46,7 @@ class ShowsViewModel @Inject constructor(private val getShows: GetShows) : ViewM
                         _loading.value = false
                     },
                     {
-                        _shows.postValue(Resource.error("Error", null))
+                        _shows.postValue(Resource.error(it.message, null))
                         _loading.value = false
                     }
                 )

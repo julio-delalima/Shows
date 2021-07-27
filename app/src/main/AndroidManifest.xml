@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Shows">
-        <activity android:name=".framework.ui.detail.ShowActivity"></activity>
+        <activity android:name=".framework.ui.detail.ShowActivity" />
         <activity android:name=".framework.ui.list.ShowsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

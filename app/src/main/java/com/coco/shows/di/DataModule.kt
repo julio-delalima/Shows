@@ -1,7 +1,8 @@
 package com.coco.shows.di
 
 import com.coco.shows.domain.data.repository.ShowRepository
-import com.coco.shows.domain.data.source.ShowDataSource
+import com.coco.shows.domain.data.source.LocalDataSource
+import com.coco.shows.domain.data.source.RemoteDataSource
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -14,7 +15,7 @@ class DataModule {
 
     @Provides
     @Singleton
-    fun showRepositoryProvider(dataSource:ShowDataSource): ShowRepository {
-        return ShowRepository(dataSource)
+    fun showRepositoryProvider(local: LocalDataSource, remote: RemoteDataSource): ShowRepository {
+        return ShowRepository(remote, local)
     }
 }

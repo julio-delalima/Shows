@@ -1,6 +1,6 @@
 package com.coco.shows.framework.data.server
 
-import com.coco.shows.framework.data.model.Program
+import com.coco.shows.framework.data.server.model.Program
 import io.reactivex.rxjava3.core.Single
 import retrofit2.http.GET
 import retrofit2.http.Path

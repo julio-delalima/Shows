@@ -37,9 +37,6 @@ class ShowsActivity : AppCompatActivity() {
                 Resource.Status.SUCCESS -> {
                     it.data?.let { it1 -> adapter.submitList(it1) }
                 }
-                else -> {
-
-                }
             }
         })
 

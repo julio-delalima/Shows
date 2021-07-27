@@ -1,4 +1,4 @@
-package com.coco.shows.framework.data.model
+package com.coco.shows.framework.data.server.model
 
 data class Program(
     val id: Int,

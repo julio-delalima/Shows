@@ -1,11 +1,11 @@
-package com.coco.shows.framework.data.model
+package com.coco.shows.framework.data.server.model
 
 data class Show(
     val genres: List<String>,
     val id: Int,
     val image: Image,
     val name: String,
-    val network: Network,
+    val network: Network?,
     val officialSite: String,
     val rating: Rating,
     val schedule: Schedule,
